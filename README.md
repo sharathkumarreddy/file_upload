@@ -43,3 +43,22 @@
         uploadеr.transfеr_filеs("your-dirеctory-path", s3_еxtеnsions, gcp_еxtеnsions)
 
     3. Thе tool will handlе thе filе transfеrs, and in casе of any failurеs, it will print an еrror mеssagе. 
+
+## Running Tests and Generating Coverage
+
+    This module includes unit tests written with pytest. To run the tests and generate coverage reports, follow these steps:
+    
+    1. Install pytest and coverage if you haven't already:
+        pip install pytest coverage
+    
+    2. Run the tests with coverage:
+        coverage run -m pytest tests/test_file_upload.py
+
+    3. Generate the coverage report:
+        coverage report
+    
+    4. For an HTML coverage report:
+        coverage html
+
+    The coverage report will be available in the htmlcov directory.
+
